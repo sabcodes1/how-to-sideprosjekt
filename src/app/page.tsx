@@ -1,22 +1,29 @@
 export default function Home() {
   const name = "Sage Brandtzæg";
-  const studie = "informatikk";
   const items = ["Sort", "Rosa", "Blå", "Lilla"];
 
   const centerStyle = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '30vh',
+    height: '50vh',
+    backgroundColor: '#f0f0f0',
   };
 
   const bigTextStyle = {
     fontSize: '1.5em',
+    lineHeight: '1.5',
   };
 
   const smallTextStyle = {
     fontSize: '1em',
+    lineHeight: '2',
   };
+
+  const listItemStyle = {
+    lineHeight: '2', // Her legger du til mer mellomrom mellom listeelementene
+  };
+
 
   return (
     <div style={centerStyle}>
@@ -25,7 +32,7 @@ export default function Home() {
         <h2 style={smallTextStyle}>Mine favorittfarger er {items.join(', ')}</h2> {/* Oppdatert for å vise en komma-separert liste */}
         <ul>
           {items.map((item, idx) => (
-            <li key={idx}>{idx + 1}: {item}</li> // Legger til en unik 'key' prop basert på indeksen
+            <li key={idx}style = {listItemStyle} >{idx + 1}: {item}</li> 
           ))}
         </ul>
       </div>
