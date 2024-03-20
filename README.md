@@ -65,7 +65,7 @@ Det kommer til å være noen eksempler til kode på hvordan du kan "løse" oppga
 Før du starter på oppgavene anbefaler vi å forke dette repoet til din egen GitHub-konto. Om du gjør det kan du også følge [how-to-deploy](./oppgaver/how-to-deploy.md) for å lære hvordan du kan deploye prosjektet ditt til Vercel.
 
 1. [Oppgave 1](./oppgaver/oppgave-1.md)
-2. [Oppgave 2](./oppgaver/oppgave-2.md)
+2. [Oppgave 2](./oppgaver/oppgave-2.md) 
 3. [Oppgave 3](./oppgaver/oppgave-3.md)
 4. [Oppgave 4](./oppgaver/oppgave-4.md)
 5. [Oppgave 5](./oppgaver/oppgave-5.md)
