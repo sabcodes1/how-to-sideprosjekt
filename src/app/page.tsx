@@ -1,9 +1,7 @@
-
 export default function Home() {
   const name = "Sage Brandtzæg";
   const studie = "informatikk";
-  const items = ["Sort", " Rosa", " Blå", " Lilla"]
-  const items_ranked = [" 1.Sort"," 2.Rosa", " 3. Blå", " 4.Lilla"]
+  const items = ["Sort", "Rosa", "Blå", "Lilla"];
 
   const centerStyle = {
     display: 'flex',
@@ -12,24 +10,22 @@ export default function Home() {
     height: '30vh',
   };
 
-  // Definerer en stil for større tekst
   const bigTextStyle = {
-    fontSize: '1.5em', // Du kan justere denne verdien for å øke eller redusere tekststørrelsen
+    fontSize: '1.5em',
   };
 
-  // Definerer en stil for større tekst
   const smallTextStyle = {
-    fontSize: '1em', // Du kan justere denne verdien for å øke eller redusere tekststørrelsen
+    fontSize: '1em',
   };
 
   return (
     <div style={centerStyle}>
       <div>
-        <h1 style={bigTextStyle}>Hei, jeg er {name} </h1>
-        <h2 style={smallTextStyle}> Mine favoritt farger er {items} </h2>
+        <h1 style={bigTextStyle}>Hei, jeg er {name}</h1>
+        <h2 style={smallTextStyle}>Mine favorittfarger er {items.join(', ')}</h2> {/* Oppdatert for å vise en komma-separert liste */}
         <ul>
           {items.map((item, idx) => (
-            <li >{idx+1}: {item}</li> // Bruker 'map' for å lage et <li>-element for hver vare
+            <li key={idx}>{idx + 1}: {item}</li> // Legger til en unik 'key' prop basert på indeksen
           ))}
         </ul>
       </div>
