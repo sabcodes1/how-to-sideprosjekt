@@ -1,3 +1,7 @@
+
+
+
+
 export default function Home() {
   const name = "Sage Brandtzæg";
   const items = ["Sort", "Rosa", "Blå", "Lilla"];
@@ -28,8 +32,12 @@ export default function Home() {
   return (
     <div style={centerStyle}>
       <div>
-        <h1 style={bigTextStyle}>Hei, jeg er {name}</h1>
+        <h1 className="text-4xl">Hei, jeg er {name}</h1>
         <h2 style={smallTextStyle}>Mine favorittfarger er {items.join(', ')}</h2> {/* Oppdatert for å vise en komma-separert liste */}
+        <p>
+          Jeg studerer Datateknologi på Universitetet i Bergen, og har en stor
+          interesse for webutvikling.
+        </p>  
         <ul>
           {items.map((item, idx) => (
             <li key={idx}style = {listItemStyle} >{idx + 1}: {item}</li> 
